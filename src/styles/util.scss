@@ -1,0 +1,13 @@
+// Utility classes for layout
+.u-stretch {
+  flex-grow: 1;
+}
+
+.u-layout-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.u-strong {
+  font-weight: bold;
+}

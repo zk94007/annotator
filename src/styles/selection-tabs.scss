@@ -1,0 +1,45 @@
+.selection-tabs {
+
+  display: flex;
+  flex-direction: row;
+  color: $grey-5;
+  @include font-normal;
+
+  &:hover {
+    color: $grey-6;
+  }
+
+  padding-bottom: 10px;
+}
+
+.selection-tabs__type {
+  color: $grey-6;
+  margin-right: 20px;
+  cursor: pointer;
+  min-width: 85px;
+  min-height: 18px;
+
+  // Disable focus ring for selected tab
+  outline: none;
+
+  user-select: none;
+}
+
+.selection-tabs__type.is-selected {
+  font-weight: bold;
+}
+
+.selection-tabs__count {
+  position: relative;
+  bottom: 3px;
+  font-size: 10px;
+}
+
+.selection-tabs__empty-message {
+  position: relative;
+  top: 10px;
+}
+
+.selection-tabs__type--orphan {
+  margin-left: -5px;
+}

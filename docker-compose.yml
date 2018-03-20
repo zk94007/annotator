@@ -1,0 +1,15 @@
+version: '2'
+services:
+  api:
+    build: .
+    container_name: linalgo-annotation-client
+    volumes:
+    - ./src:/opt/application
+    env_file:
+    - docker-compose.env
+    ports:
+    - "3000:3000"
+    - "3001:3001"
+    command:
+    - gulp
+    - watch
